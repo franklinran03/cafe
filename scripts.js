@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <li><a class="nav-btn" href="/pages/reserve.html">Reservas</a></li>
                 <li><a class="nav-btn" href="/pages/gallery.html">Galeria</a></li>
                 <li><a class="nav-btn" href="/index.html#about">Nosotros</a></li>
-                <li><a class="nav-btn" href="#">Contacto</a></li>
+                <li><a class="nav-btn" href="#contact-cont">Contacto</a></li>
             </ul>
         </nav>
     `;
