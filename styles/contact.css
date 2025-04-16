@@ -161,7 +161,7 @@ form button:hover {
 /* ########################################################################################## */
 /* Estilos responsivos */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 
   .contact-cont {
     width: 100%;
