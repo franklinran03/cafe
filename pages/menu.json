@@ -1,0 +1,148 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "nombre": "Espresso Doble",
+      "categoria": "Café",
+      "descripcion": "Café intenso y concentrado.",
+      "precio": 6500,
+      "imagen": "/images/espresso.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Café Latte",
+      "categoria": "Café",
+      "descripcion": "Café suave con leche vaporizada.",
+      "precio": 7800,
+      "imagen": "/images/latte.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Cappuccino",
+      "categoria": "Café",
+      "descripcion": "Con leche espumada y un toque de cacao.",
+      "precio": 7900,
+      "imagen": "/images/cappuccino.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Americano",
+      "categoria": "Café",
+      "descripcion": "Café negro suave, sin leche.",
+      "precio": 6000,
+      "imagen": "/images/americano.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Cold Brew",
+      "categoria": "Bebida Fría",
+      "descripcion": "Café frío infusionado por 12 horas.",
+      "precio": 8500,
+      "imagen": "/images/cold-brew.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Té Chai Latte",
+      "categoria": "Bebida Caliente",
+      "descripcion": "Té con leche y especias exóticas.",
+      "precio": 7500,
+      "imagen": "/images/teChaiLatte.png"
+    },
+    {
+      "id": 7,
+      "nombre": "Croissant",
+      "categoria": "Panadería",
+      "descripcion": "Crujiente y mantequilloso.",
+      "precio": 5200,
+      "imagen": "/images/croissant.png"
+    },
+    {
+      "id": 8,
+      "nombre": "Pan de Chocolate",
+      "categoria": "Panadería",
+      "descripcion": "Hojaldrado relleno de chocolate.",
+      "precio": 5800,
+      "imagen": "/images/pan-chocolate.png"
+    },
+    {
+      "id": 9,
+      "nombre": "Muffin de Arándanos",
+      "categoria": "Postre",
+      "descripcion": "Esponjoso con trozos de arándano.",
+      "precio": 5500,
+      "imagen": "/images/muffin-arandanos.png"
+    },
+    {
+      "id": 10,
+      "nombre": "Brownie Clásico",
+      "categoria": "Postre",
+      "descripcion": "Con nueces y chocolate derretido.",
+      "precio": 6500,
+      "imagen": "/images/brownie.png"
+    },
+    {
+      "id": 11,
+      "nombre": "Tarta de Limón",
+      "categoria": "Postre",
+      "descripcion": "Con base crocante y merengue.",
+      "precio": 7200,
+      "imagen": "/images/tarta-limon.png"
+    },
+    {
+      "id": 12,
+      "nombre": "Cheesecake Frutos Rojos",
+      "categoria": "Postre",
+      "descripcion": "Clásico cheesecake con covertura de fresa.",
+      "precio": 7900,
+      "imagen": "/images/cheesecake-rojo.png"
+    },
+    {
+      "id": 13,
+      "nombre": "Focaccia de Tomate",
+      "categoria": "Panadería",
+      "descripcion": "Pan artesanal con tomate y especias.",
+      "precio": 6200,
+      "imagen": "/images/focaccia-tomate.png"
+    },
+    {
+      "id": 14,
+      "nombre": "Cheesecake con Fruta",
+      "categoria": "Postre",
+      "descripcion": "Clásico cheesecake con frutas.",
+      "precio": 9500,
+      "imagen": "/images/cheesecake-fruta.png"
+    },
+    {
+      "id": 15,
+      "nombre": "Affogato",
+      "categoria": "Postre",
+      "descripcion": "Helado de vainilla con espresso caliente.",
+      "precio": 7800,
+      "imagen": "/images/affogato.png"
+    },
+    {
+      "id": 16,
+      "nombre": "Roll de Canela",
+      "categoria": "Panadería",
+      "descripcion": "Con glaseado de vainilla.",
+      "precio": 5900,
+      "imagen": "/images/roll-canela.png"
+    },
+    {
+      "id": 17,
+      "nombre": "Tostada Francesa",
+      "categoria": "Panadería",
+      "descripcion": "Con miel y canela.",
+      "precio": 6700,
+      "imagen": "/images/tostada-francesa.png"
+    },
+    {
+      "id": 18,
+      "nombre": "Tiramisu",
+      "categoria": "Postre",
+      "descripcion": "Postre de 4 capas.",
+      "precio": 9700,
+      "imagen": "/images/tiramisu.png"
+    }
+  ]
+}

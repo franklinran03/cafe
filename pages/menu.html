@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="icon" href="/images/logoSinFondo.png" type="image/x-icon">
+    <title>Café & Co.</title>
+</head>
+<body>
+    
+
+    <div class="menu-content">
+
+        <div class="cart" id="cart">
+            <button class="btn-cart" id="btn-cart" onclick="showCart()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill cart-icon" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </button>
+        </div>
+        <h1 class="menu-tittle">MENU</h1>
+        <div class="list-menu" id="list-menu">
+            <!-- Aqui cargan las tarjetas de productos -->
+        </div>
+    </div>
+
+    <div class="msg" id="msg">
+        <span class="cart-msg">Producto añadido al carrito</span>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Tu pedido</h2>
+            <div class="cart-list" id="cart-list">
+                <!-- Aqui carga los productos agregados al carrito -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="total-price">$0</span></p>
+            </div>
+            <hr>
+            <div class="cart-actions">
+                <button class="btn btn-order" id="btn-order" onclick="comprar()">Realizar pedido</button>
+                <button class="btn btn-clear" id="btn-clear" onclick="limpiarCarrito()">Limpiar pedido</button>
+            </div>
+
+            <div class="order-confirmation" id="order-confirmation">
+                <h2>¡Gracias por tu pedido!</h2>
+                <p>Tu pedido con un total de <strong id="price"></strong>, ha sido realizado con éxito.</p>
+                <span class="orderID" id="orderID">
+                    <!-- Aqui carga el ID de la orden -->
+                </span>
+                <p>
+                    Con este numero de oreden podras buscar tu pedido en la cafeteria Café & Co. mas cercana. <br>
+                    Recuerda que el tiempo de espera es de 30 minutos, tienes hasta las <strong id="fechaLimite"></strong> para pasar por tu pedido.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/scripts.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

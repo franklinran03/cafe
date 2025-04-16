@@ -1,0 +1,329 @@
+/* Colores principsales para el proyecto */
+:root {
+    --verde-oliva: #5C6A50;
+    --crema: #F6F1E9;
+    --marron: #7B4B3A;
+    --latte-claro: #D9C1A3;
+    --negro-suave: #2D2D2D;
+}
+
+
+/* Estilos contenedor de menu */
+
+.msg {
+    display: none;
+    margin-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.msg span {  
+    font-size: 1.2em;
+    color: var(--latte-claro);
+    background-color: var(--verde-oliva);
+    font-family: "Lora", serif;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.msg.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+
+/* stilos carrito de pedidos */
+
+.btn-cart {
+    position: fixed;
+    right: 20px;
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    color: var(--marron);
+    background-color: var(--latte-claro);
+    padding: 15px;
+    border: none;
+    border-radius: 50% 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cart:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: end;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-modal.show {
+    display: flex;
+}
+
+.cart-modal-content {
+    background-color: var(--crema);
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal-content h2 {
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: var(--marron);
+    margin-bottom: 20px;
+}
+
+.cart-modal-content hr {
+    width: 100%;
+    border: 1px solid var(--marron);
+    margin: 10px 0;
+}
+
+.cart-item {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2px 10px; 
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.cart-item:hover {
+    background-color: var(--latte-claro);
+    transition: background-color 0.3s ease;
+}
+
+.cart-item p {
+    font-size: 1em;
+    color: var(--negro-suave);
+    font-family: "Lora", serif;
+}
+
+.btn-remove {
+    font-size: 1.5em;
+    font-family: "Montserrat", serif;
+    color: var(--negro-suave);
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.cart-total p {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px;    
+}
+
+.cart-actions {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px;
+}
+
+.btn-order, .btn-clear {
+    padding: 5px;
+    border-radius: 8px;
+    font-family: "Montserrat", serif;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-order {
+    color: var(--crema);
+    background-color: var(--verde-oliva);
+}
+
+.btn-order:hover {
+    color: var(--verde-oliva);
+    background-color: var(--crema);
+    border: solid 1px var(--verde-oliva);
+}
+
+.btn-clear {
+    color: var(--negro-suave);
+    background-color: var(--latte-claro);
+}
+
+.btn-clear:hover {
+    color: var(--latte-claro);
+    background-color: var(--negro-suave);
+}
+
+
+.order-confirmation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.orderID {
+    font-size: 1.2em;
+    font-family: "Lora", serif;
+    border: solid 1px var(--verde-oliva);
+    padding: 5px 10px;
+}
+
+.order-confirmation.show {
+    display: flex;    
+}
+
+
+
+/* Estilos items del menu */
+.menu-tittle {
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--marron);
+    margin-bottom: 20px;
+}
+
+.list-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: var(--latte-claro);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body h2 {
+    font-size: 1.7em;
+    color: var(--marron);
+    font-family: "Playfair Display", serif;
+}
+
+.card-body span {
+    font-size: 1em;
+    color: var(--marron);
+    font-family: "Lora", serif;
+}
+
+.card-body hr {
+    width: 100%;
+    border: 1px solid var(--marron);
+    margin: 10px 0;
+}
+
+.card-body p {
+    font-size: 1em;    
+    color: var(--negro-suave);
+    font-family: "Lora", serif;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 20px;
+}
+
+.card-footer span{
+    font-size: 1em;
+    font-family: "Lora", serif;
+    color: var(--marron);
+}
+
+.btn-add-cart { 
+    color: var(--marron);
+    background-color: var(--crema);
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 5px;
+    border: 0;
+    padding: 5px;
+    border-radius: 8px;
+    font-family: "Montserrat", serif;
+}
+
+.btn-add-cart:hover {
+    color: var(--crema);
+    background-color: var(--marron);    
+}
+
+
+
+
+/* ########################################################################################## */
+/* Estilos responsivos */
+
+
+
+
+@media (max-width: 1000px) {   
+
+    .cart-modal-content {
+        background-color: var(--crema);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}

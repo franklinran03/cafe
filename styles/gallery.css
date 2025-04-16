@@ -1,0 +1,57 @@
+/* Colores principsales para el proyecto */
+:root {
+    --verde-oliva: #5C6A50;
+    --crema: #F6F1E9;
+    --marron: #7B4B3A;
+    --latte-claro: #D9C1A3;
+    --negro-suave: #2D2D2D;
+}
+
+.gallery-content {
+    text-align: center;
+}
+
+.gallery {
+    column-count: 3;
+    column-gap: 30px;
+    padding: 20px;
+}
+
+.gallery-title{
+    font-size: 2.5em;
+    color: var(--marron);
+    font-family: "Playfair Display", serif;    
+}
+
+.gallery-img {
+    width: 100%;
+    margin-bottom: 16px;
+    break-inside: avoid;
+    border-radius: 8px;
+    background-color: var(--latte-claro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* ########################################################################################## */
+/* Estilos responsivos */
+
+
+@media (max-width: 800px) {
+    .gallery {
+        column-count: 1;
+        column-gap: 30px;
+        padding: 20px;
+    }
+}
+
+
+

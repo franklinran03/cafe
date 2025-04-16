@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/reserve.css">
+    <link rel="icon" href="/images/logoSinFondo.png" type="image/x-icon">
+    <title>Café & Co.</title>
+</head>
+<body>
+    
+    <div class="reserve-cont">
+        <h1 class="reserve-tittle">Reserva tu mesa</h1>
+        <div class="form-reserve">
+            <form id="reservation-form" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+    
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+    
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date">
+    
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" min="09:00" max="22:00">
+    
+                <label for="chairs">Número de personas:</label>
+                <input type="number" id="chairs" name="chairs" min="1" max="10" >
+    
+                <button type="submit">Reservar</button>
+            </form>
+    
+            <div class="img-reserve-cont">
+                <img src="/images/cafe2.png" alt="Imagen de reserva" class="img-reserve">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenedor del mensaje -->
+    <div class="msg-content" id="msg-content">
+        <div class="msg">    
+            <h1 class="msg-title" id="msg-title"></h1>
+            <span class="message" id="message"></span>
+        </div>
+    </div>
+    
+
+    
+    <script src="/scripts.js"></script>
+    <script src="/js/reserve.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+/* Colores principsales para el proyecto */
+:root {
+    --verde-oliva: #5C6A50;
+    --crema: #F6F1E9;
+    --marron: #7B4B3A;
+    --latte-claro: #D9C1A3;
+    --negro-suave: #2D2D2D;
+}
+
+body { 
+    background-color: var(--crema);
+}
+
+.close {
+    font-size: 2em;
+    font-family: "Montserrat", serif;
+    color: var(--marron);
+    cursor: pointer;
+}
+
+
+/* Estilos nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-oliva);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding: 15px;
+}
+
+.hamburger {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: var(--crema);
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:hover {
+    color: var(--marron);
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--marron);
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--crema);
+    border-radius: 8px;
+}
+
+.nav-btn:hover {
+    color: var(--crema);
+    background-color: var(--marron);
+}
+
+
+
+/* Estilos contenedor principal */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner-cont {
+    position: relative;
+    display: inline-block;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+    border-radius: 8px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    color: var(--crema);
+    font-family: "Playfair Display", serif;
+}
+
+.title p {
+    font-size: 1.2em;
+    color: var(--crema);
+    font-family: "Lora", serif;
+}
+
+.btn-ver-menu {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--crema);
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--verde-oliva);
+    border-radius: 8px;
+}
+
+.btn-ver-menu:hover {
+    background-color: var(--crema);
+    color: var(--marron);
+}
+
+/* estilos nosotros */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    color: var(--marron);
+    font-family: "Playfair Display", serif;
+}
+
+.about section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; 
+    margin: 40px 0;
+}
+  
+.about section p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 300px;
+    color: var(--negro-suave);
+}
+  
+.img-about {
+    width: 500px; 
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-about:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.img-about-complete {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos footer */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-oliva);
+    padding-left: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.footer-logo-img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.derechos-reservados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--crema);
+    padding-right: 50px;
+    font-size: 1em;
+    font-family: "Lora", serif;
+}
+
+
+/* ########################################################################################## */
+/* Estilos responsivos */
+
+/* Estilos nav */ 
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .title h1 {
+        font-size: 2em;
+    }
+    
+    .title p {
+        font-size: 0.8em;
+    }
+
+    .btn-ver-menu {
+        font-size: 0.8em;
+    }
+
+    .about h1 {
+        font-size: 2em;
+    }
+    
+    /*.about section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+        margin: 20px 0;
+    }*/
+
+    .about section p {
+        width: 50%;
+        font-size: 1.2em;
+    }
+
+    .img-about {
+        width: 50%;
+        height: auto;
+    }
+
+    .img-about-complete {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
