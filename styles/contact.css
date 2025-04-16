@@ -181,7 +181,7 @@ form button:hover {
     height: 400px;
   }
 
-  .contact-form {
+  .contact-form, form {
     width: 100%;
   }
 
