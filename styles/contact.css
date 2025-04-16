@@ -181,6 +181,10 @@ form button:hover {
     height: 400px;
   }
 
+  .contact-form {
+    width: 100%;
+  }
+
 
 }
 

@@ -246,6 +246,11 @@ nav {
 
     .btn-ver-menu {
         font-size: 0.5em;
+        padding-top: 15px;
+    }
+
+    .about {
+        padding-top: 20px;
     }
 
     .about h1 {
